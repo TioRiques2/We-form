@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+
+:root{
+    font-size: 62.5%;
+    --border-padrao: 0.1rem solid rgba(0, 0, 0, 0.15);
+    --border-radius-padrão: 1.2rem;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+
+aside{
+    margin-top: 5rem
+}
+
+aside h1{
+    text-align: center;
+    font-size: 6.4rem;
+    font-weight: 50rem;
+    line-height: 7.5rem;
+
+}
+
+aside span{
+    color: #ff5678;
+}
+
+main{
+    margin: 0 auto;
+    width: 60rem;
+    height: 42rem;
+    padding: 4.4rem 5.7rem ;
+    border: 0.2rem solid  #35E6E9;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 0 1.6rem;
+    
+}
+
+main header i{
+    font-size: 2.4rem;
+    color: #ff5678;
+
+}
+
+main header h2{
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+
+main header span{
+    color: #ff5678;
+}
+
+main .container{
+    margin-top: 3rem ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 4.5rem 3.5rem;
+    font-size: 1.8rem;
+
+}
+
+
+
+main .container span{
+    border: 1px solid  #35E6E9;
+    color: #35E6E9;
+    padding: 0.5rem 3rem;
+    border-radius: 1rem;
+
+    margin: 0 3rem;
+}
+
+main .container a{
+    text-decoration: underline;
+    color: #ff5678;
+}
