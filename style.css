@@ -7,11 +7,14 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+
 }
 
 
 :root{
     font-size: 62.5%;
+    --border-padrao: 0.1rem solid rgba(0, 0, 0, 0.15);
+    --border-radius-padrão: 1.2rem;
 }
 
 body{
@@ -60,8 +63,9 @@ main{
     width: 60rem;
     height: 52rem;
     padding: 4.4rem 5.7rem ;
-    border: 1px solid rgba(0, 0, 0, 0.15); 
-    border-radius: 1.2rem;
+    border: var(--border-padrao); 
+    border-radius: var(--border-radius-padrão);
+    position: relative;
 
      
 
@@ -83,7 +87,7 @@ main .buttons{
 main .buttons a{
     height: 5.5rem;
     font-size: 2.4rem;
-    border-radius: 1.2rem;
+    border-radius: var(--border-radius-padrão);
     color: #fff;
 
     display: flex;
@@ -91,13 +95,13 @@ main .buttons a{
     align-items: center;
 }
 
-main .buttons a:first-child{
+main .buttons a{
     background-color: #35E6E9;
     margin-top: 5.4rem;
 
 }
 
-main .buttons a:last-child{
+main .buttons a + a{
     background-color: #ff5678;
     margin-top: 4.8rem;
 
@@ -118,4 +122,92 @@ main .footer a{
     text-decoration: underline;
 
 }
+
+
+/* Pagina - Cadastro-entidade (2) */
+
+ aside img{
+    margin-bottom: 8rem;
+}
+
+main header{
+    display: flex;
+    align-items: center;
+    gap: 0 1.8rem;
+
+}
+
+main header img{
+    margin-bottom: 5rem;
+}
+
+
+
+main header i{
+    font-size: 2.4rem;
+    color: #ff5678;
+
+}
+
+main form{
+    margin-top: 1.8rem;
+}
+
+main form label{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+main form input, main form select{
+    width: 48.9rem;
+    height: 5.5rem;
+ 
+    background-color: #fff;
+    border: var(--border-padrao);
+    border-radius: var(--border-radius-padrão);
+
+}
+
+main form select{
+    appearance: none;
+}
+
+main form .select-div{
+    position: relative;
+}
+
+main form .select-div::after{
+    content: '\f107';
+    position: absolute;
+    color: #35E6E9;
+    top: 1.4rem;
+    right: 1.4rem;
+    font-size: 2.2rem;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 600;
+    z-index: 1;
+}
+
+main form .points{
+    position: relative;
+    
+}
+
+main form input + button{
+    position: absolute;
+    right: -3.7rem;
+    top: 4.8rem;
+    background-color: transparent;
+    border: none;
+    color: #35E6E9;
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+
+
+
+
 
